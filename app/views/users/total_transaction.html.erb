@@ -1,0 +1,56 @@
+<div class="container">
+	<header class=" text-white text-center ">
+		<div class="row">
+		   <div class="col-sm-4">
+		   </div>
+		   <div class="col-sm-4">
+		     <%= image_tag('logo.png',:class => "img-responsive") %>
+		   </div>
+		    <div class="col-sm-4">
+		    </div>
+		</div>
+	</header>
+	<h2>Buyer Transactions</h2>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">sfid</th>
+        <th scope="col">Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @buyes_records.each do |buyer| %>
+        <tr>
+          <th scope="row"><%= link_to buyer.id, new_transaction_path(:id => buyer.sfid) %></th>
+          <td><%= buyer.name  %></td>
+          <td><%= buyer.sfid  %></td>
+          <td>Pending..</td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <h2>Seller Transactions</h2>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">sfid</th>
+        <th scope="col">Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @seller_records.each do |seller| %>
+        <tr>
+          <th scope="row"><%= seller.id%></th>
+          <td><%= seller.name  %></td>
+          <td><%= seller.sfid  %></td>
+          <td>Pending..</td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

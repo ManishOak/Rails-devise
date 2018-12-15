@@ -1,0 +1,179 @@
+
+    <div class="container"> 
+    <header class=" text-white text-center ">
+    <div class="row">
+      <%= form_tag users_user_create_path, :method => :post do %>
+       <div class="col-sm-4">
+        <input type="email" name="sender_email" required="true" class="btn btn-outline-light" placeholder="SELLERS E-MAIL">
+       </div>
+       <div class="col-sm-4">
+         <%= image_tag('logo.png',:class => "img-responsive") %>
+          <button type="submit" class="btn btn-outline-light color-g">BEGIN TRANSCTION</button>
+       </div>
+        <div class="col-sm-4">
+        <input type="email" name="buyer_email" required="true" class="btn btn-outline-light" placeholder="BUYERS E-MAIL">
+        </div>
+      <% end %>
+    </div>
+    </header>
+<hr>
+<div class="row mid">
+<div class="col-sm-6 left-line">
+<h3>Buy or sell online without the fear of being cheated.</h3>
+<p>MiddleMan.co specializes in managing transactions of virtual items.
+   Ourcompany will make sure that you buy/sell safely without the fear or 
+   chargebacks, and that the item you purchased is as described. </p>
+   <%= image_tag('assure.jpg',width: "65%", :class => "img-responsive") %>
+</div>
+<div class="col-sm-6 padding-left">
+  <h6><b>Complete protection for all transactIons</b></h6>
+<span>It's fast, easy, and secure. </span>
+<ol>
+  <li> Start a transaction</li>
+  <li>Set terms </li>
+  <li>Buyer sends MiddleMan the payment</li>
+  <li>MiddleMan secures the property</li>
+  <li>Upload a mutual agreement, MiddleMan 
+    releases the property and the payment to the rightful owners</li>
+
+</ol>
+</div>
+</div>
+<hr>
+<h3 class="text-center">If it's virtual in nature, you can buy it or sell it safely using MiddleMan</h3>
+</div>
+    <section class="features-icons bg-light text-center">
+      <div class="container-90">
+        <div class="row ">
+          <div class="col-lg-6 text-center bg">
+            <div class="">
+ 
+              <h5>We offer an easy to use, chat like transactions!</h5>
+              <p class="lead mb-0">We offer an easy to use, chat like transactions!</p>
+              <div class="row mid-check-row">
+                <div class="col-sm-6 text-left  ">
+                  <div class="padding-checkbox">
+                    <div class="form-check">
+                        <input class="form-check-input" checked type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Gaming
+                        </label>
+                      </div>
+                      <div class="form-check">
+                          <input class="form-check-input" checked type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">
+                            Social
+                          </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" checked type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Websites
+                            </label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" checked type="checkbox" value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                Data
+                              </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input"  checked type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                  Software
+                                </label>
+                              </div>     </div>
+                </div>
+                <div class="col-sm-6 text-left">
+                    <div class="form-check">
+                        <input class="form-check-input" checked type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Services
+                        </label>
+                      </div>
+                      <div class="form-check">
+                          <input class="form-check-input" checked type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">
+                            Influence
+                          </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" checked type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Domains
+                            </label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" checked type="checkbox" value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                Custom Scripts
+                              </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" checked  type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                  Odd requests
+                                </label>
+                              </div>
+                </div>
+
+              </div>
+              <h5>We make transfers of virtual items easy and hassle-free! </h5>
+            </div>
+          </div>
+          <div class="col-lg-6">
+              <div class="row">
+                  <div class="col-sm-2">
+                      <i class="fa fa-user"></i>
+
+
+                  </div>
+                <div class="card text-left col-sm-8 buy">
+                    <div class="card-header">
+                      BUYER
+                    </div>
+                    <div class="card-body">
+                      
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    
+                    </div>
+                  </div>
+                  
+                  </div>
+                  <div class="row sell">
+                      <div class="col-sm-2">
+                          <i class="fa fa-user"></i>
+
+
+                      </div>
+            <div class="card text-left col-sm-8 ">
+                <div class="card-header">
+                  SELLER
+                </div>
+                <div class="card-body">
+              
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                 
+                </div>
+              </div>
+            </div>
+              <div class="row logo-box">
+                  <div class="col-sm-2">
+                      <%= image_tag('mm.png', :class => "img-responsive") %>
+                  </div>
+                  <div class="card text-left col-sm-7 ">
+                      <div class="card-header green">
+                        MiddleMan
+                      </div>
+                      <div class="card-body">
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        
+                      </div>
+                    </div>
+              </div>
+              
+          </div>
+        
+        </div>
+      </div>
+    </section>
